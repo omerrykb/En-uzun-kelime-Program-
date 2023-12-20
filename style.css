@@ -1,0 +1,205 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(29, 29, 29);
+    color: chartreuse;
+    height: 100vh;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+}
+.parent{
+    width: 100%;
+    height: 100%;
+    background: url(img/black-jigsaw-puzzle-blue-neon-background_141928-304.avif);
+    background-size: cover;
+    background-position: bottom;
+    opacity: .9;
+}
+.parent2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 11, 11, 0.904);
+}
+.baslikDiv{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 6rem;
+}
+h1{
+    animation: rgb 3s linear infinite alternate-reverse;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+}
+@keyframes rgb{
+    0%{
+        background: radial-gradient(circle, #17ff00, rgb(6, 45, 0)  50%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 51px;
+    }
+    50%{
+        background: radial-gradient(circle, rgb(6, 45, 0), #17ff00  50%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 50px;
+    }
+    100%{
+        background: radial-gradient(circle, #17ff00, rgb(6, 45, 0)  50%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 51px;
+    }
+}
+#GirilecekCumle{
+    border: none;
+    padding: 1rem;
+    margin: 2rem 0 2rem 0;
+    background-color: green;
+    border-radius: 5px;
+    width: 30%;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    cursor: text;
+    transition: background .5s;
+}
+#GirilecekCumle:hover{
+    opacity: .9;
+    background-color: rgb(0, 95, 129);
+    
+}
+#GirilecekCumle::placeholder{
+    color: black;
+    text-align: center;
+    font-family: 'Rubik Doodle Shadow', sans-serif !important;
+    font-size: 20px;
+}
+#GirilecekCumle:focus{
+    outline: 3px solid #17ff00;
+    opacity: 1;
+    background-color: green;
+    font-family: 'Noto Sans', sans-serif;
+}
+#sonucListesi{
+    overflow: auto;
+    max-height: 10rem;
+    text-wrap: wrap;
+    box-shadow: 1px 0px 3px 10px #17ff00;
+    padding:0 1rem 1rem 1rem;
+    display: none;
+    animation: sonucListAnimation 40s linear infinite;
+}
+@keyframes sonucListAnimation{
+    0%{
+        box-shadow: 1px 0px 3px 10px rgb(127, 0, 0);
+    }
+    5%{
+        box-shadow: 1px 0px 3px 10px rgb(127, 83, 0);
+    }
+    10%{
+        box-shadow: 1px 0px 3px 10px rgb(76, 76, 0);
+    }
+    15%{
+        box-shadow: 1px 0px 3px 10px rgb(65, 97, 0);
+    }
+    20%{
+        box-shadow: 1px 0px 3px 10px rgb(67, 111, 0);
+    }
+    25%{
+        box-shadow: 1px 0px 3px 10px #0fb500;
+    }
+    30%{
+        box-shadow: 1px 0px 3px 10px rgb(0, 125, 0);
+    }
+    35%{
+        box-shadow: 1px 0px 3px 10px rgb(0, 91, 91);
+    }
+    40%{
+        box-shadow: 1px 0px 3px 10px rgb(0, 0, 126);
+    }
+    45%{
+        box-shadow: 1px 0px 3px 10px rgb(72, 0, 140);
+    }
+    50%{
+        box-shadow: 1px 0px 3px 10px rgb(117, 0, 117);
+    }
+    55%{
+        box-shadow: 1px 0px 3px 10px rgb(130, 0, 43);
+    }
+    60%{
+        box-shadow: 1px 0px 3px 10px rgb(145, 52, 67);
+    }
+    65%{
+        box-shadow: 1px 0px 3px 10px rgb(137, 137, 137);
+    }
+    70%{
+        box-shadow: 1px 0px 3px 10px rgb(74, 74, 74);
+    }
+    75%{
+        box-shadow: 1px 0px 3px 10px black;
+    }
+    80%{
+        box-shadow: 1px 0px 3px 10px rgb(24, 24, 24);
+    }
+    85%{
+        box-shadow: 1px 0px 3px 10px rgb(79, 79, 79);
+    }
+    90%{
+        box-shadow: 1px 0px 3px 10px rgb(43, 18, 18);
+    }
+    95%{
+        box-shadow: 1px 0px 3px 10px brown;
+    }
+    100%{
+        box-shadow: 1px 0px 3px 10px rgb(127, 0, 0);
+    }
+}
+#sonucListesi *{
+    margin: 1rem;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+}
+
+
+
+.btn{
+    margin: 0 0 5rem 0;
+    width: 30%;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: antiquewhite;
+    padding: 1rem;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    letter-spacing: 2px;
+    transition: all .5s;
+    box-shadow: 0px 0px 3px 2px rgb(152, 150, 150);
+    cursor: crosshair;
+}
+.btn:hover{
+    background-color: rgb(4, 4, 4);
+    color: #cd0000;
+    box-shadow: 0px 0px 3px 2px #cd0000;
+}
+.blueSpan{
+    color: aqua;
+}
+
+/* logo */
+
+.logo{
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+    font-style: italic;
+}
+#rath{
+    padding: .5rem;
+}

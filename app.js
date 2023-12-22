@@ -5,7 +5,8 @@ function enUzunKelimeBul() {
 
 
   // Cümleyi kelimelere ayır
-  let kelimeler = inputDegeri.split(" ");
+  //split(/\s|\p{P}/u) ifadesi, boşlukları (\s) ve Unicode noktalama işaretlerini (\p{P}) kullanarak cümleyi böler. ~(ChatGPT)
+let kelimeler = inputDegeri.split(/\s|\p{P}/u);
 
   // En uzun kelimeyi bulmak için bir değişken tanımlamakk
   let enUzunKelime = "";
